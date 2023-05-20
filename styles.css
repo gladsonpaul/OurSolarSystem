@@ -30,6 +30,7 @@ body {
     width: 560px;
     left: 0;
     opacity: 0;
+    overflow-x: hidden;
 }
 
 #circle.animate__animated{
@@ -39,7 +40,9 @@ body {
     margin-top: 60px;
     left: 27vw;
     opacity: 0;
-    transform: rotateZ(60deg);
+    transform: rotateZ(20deg);
+    overflow-x: hidden;
+    
 }
 
 
@@ -64,20 +67,62 @@ body {
     align-items: center;
     width: 1000px;
     height: 200px;
-    background-color: transparent;
+    /* background-color: grey; */
+    opacity: 0;
+}
+
+.FYI.animate__animated
+{
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 250px;
+    /* background-color: grey; */
+    opacity: 1;
 }
 
 .FYI h1{
     font-family: 'Panchang', sans-serif;    
-    color: #79E0EE;
+    color: #16FF00;
     font-size: 3em;
+    text-shadow: 0px 0px 3px #FC2947;
+    position: absolute;
+    margin-bottom: 190px;
+    /* animation: blink infinite 1s linear; */
 }
 
-.FYI p{
+@keyframes blink
+{
+    0%{text-shadow: 0px 0px 9px #8fe8f4;}
+    20%{text-shadow: 0px 0px 9px #8fe8f4;}
+    50%{text-shadow: none}
+    60%{text-shadow: 0px 0px 9px #8fe8f4;}
+    80%{text-shadow: none}
+    100%{text-shadow: 0px 0px 9px #8fe8f4;}
+}
+
+/* .FYI p{
     color: white;
     font-family: 'Sentient', serif;
     font-size: 2.2em;
     text-align: center;
     transition: all ;
+    /* padding-top: 100px; 
+}*/
+
+
+.FYI #element{
+    color: white;
+    font-family: 'Sentient', serif;
+    font-size: 2.2em;
+    text-align: center;
+    transition: all ;
+    /* padding-top: 100px; */
 }
+
 

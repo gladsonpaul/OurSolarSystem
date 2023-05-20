@@ -22,23 +22,58 @@
 
 
     <div class="FYI">
-        <h1>Did You Know?</h1>
-        <p id="info"></p>
+        <h1>DID YOU KNOW?</h1>
+        <!-- <p id="info">The sunset on Mars appears blue</p> -->
+        <span id="element"></span>
     </div>
-
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur ullam assumenda mollitia quod nihil aperiam laborum vitae quia porro, debitis excepturi ducimus alias tempora earum deleniti eveniet unde asperiores, at quae necessitatibus obcaecati quasi ad atque. Odio dolorem consequatur eius nesciunt expedita dolore repudiandae hic obcaecati quo quas totam excepturi voluptas quae consectetur amet aspernatur maiores cum, tenetur sed laudantium! Quod sequi voluptatem voluptatibus, voluptatum perferendis optio! Sapiente odio eveniet explicabo expedita facere possimus numquam excepturi voluptates quidem perspiciatis, doloremque corrupti non tempore! Sint, eius? Natus sed iusto provident eius saepe explicabo ipsam commodi culpa nobis accusamus amet assumenda distinctio velit, veritatis laboriosam rem. Aspernatur magnam voluptatibus sint recusandae aperiam expedita. Deleniti molestiae eveniet eligendi rerum sequi debitis unde sint minima eos autem aliquam itaque corporis incidunt amet exercitationem nihil nulla odio earum deserunt molestias non quae eius, inventore pariatur. A est animi, nulla veritatis officiis laborum architecto tempore asperiores ex minus cupiditate enim sint adipisci dolore libero vitae. Illo, iure repudiandae eius assumenda ullam quam eaque asperiores sapiente aut molestiae dolorem in commodi tempora repellendus iusto magnam hic similique aperiam minus quos laboriosam cumque culpa impedit fuga! Fuga magnam ut deleniti voluptate odio ipsam quis dolorum rerum rem saepe cumque reiciendis, quisquam est ex debitis, vero obcaecati, quod a. Laboriosam ad, incidunt id rem velit ratione delectus quam totam et soluta tempore, earum libero fugiat nihil quos consectetur? Ullam nihil ratione eligendi quos hic voluptatem perferendis aperiam asperiores voluptatibus pariatur ut minima, iure, facere explicabo. Veritatis cum nesciunt molestiae, exercitationem minima, harum ad molestias explicabo odio reiciendis natus ea fugit temporibus porro in sit autem a ex optio nostrum! Eum consectetur, qui illum enim voluptatum facilis. Deserunt, maxime quidem. Esse natus exercitationem commodi iusto culpa animi distinctio labore enim dignissimos cumque. Non ut ex reiciendis vero, possimus quae? Odit cum, adipisci possimus explicabo natus nihil placeat facilis tempore distinctio saepe doloremque voluptatibus in ea eius? Adipisci eius nemo reprehenderit pariatur dolores perspiciatis labore exercitationem laborum optio, ad explicabo libero rem animi ipsam voluptates at, reiciendis fugiat quis error fuga minima. Quo officia delectus beatae nobis maxime impedit porro earum veritatis error maiores consequuntur fuga, doloremque aut, minima iste accusamus reiciendis natus corrupti? Ut eius natus aspernatur adipisci deleniti nesciunt necessitatibus laborum eveniet deserunt quis nemo ipsam, quasi quaerat repellendus atque saepe porro esse aliquid neque odit sint, voluptates dolores. Quod vero neque possimus quisquam expedita sit autem consequuntur veniam.
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['The largest asteroid in our solar system is a mammoth piece of space rock named Ceres', 'One day on Venus is longer than one year on Earth', 
+    "Jupiter's Red Spot is shrinking",
+    "One of Saturn's moons has a distinct two-tone coloration",
+    "The position of the North Star will change over time",
+    "The Sun weighs about 330, 000 times more than Earth.",
+    "Footprints left on the Moon won’t disappear as there is no wind",
+    "Because of lower gravity, a person who weighs 220 lbs on Earth would weigh 84 lbs on Mars",
+    "There are 79 known moons orbiting Jupiter",
+    "The Martian day is 24 hours 39 minutes and 35 seconds long",
+    "Earth is the only planet not named after a God",
+    "Due to the Sun and Moon’s gravitational pull, we have tides",
+    "The International Space Station is the largest manned object ever sent into space","Spacecraft have visited all the known planets in our solar system",
+    "There is no sound in space because molecules are too far apart to transmit sound",
+    "The temperature in the void of space is about − 270.45 °C.",
+    "Space is a hard vacuum, meaning it is a void containing very little matter.",
+    "The International Space Station is the largest ever crewed object in space.",
+    "In the observable universe there are an estimated 2 trillion (2,000,000,000,000) galaxies",
+    "Neutron stars can spin at a rate of 600 rotations per second",
+    "Space is completely silent",
+    "There is an uncountable number of stars in the known universe",
+    "99 percent of our solar system's mass is the sun",
+    "More energy from the sun hits Earth every hour than the planet uses in a year",
+    "If two pieces of the same type of metal touch in space, they will bond and be permanently stuck together",],
+      typeSpeed: 50,
+    });
+  </script>
     <script src="script.js"></script>
     <script>
-        let offset = { offset: "100%" }
+        let offset = { offset: "90%" }
         $(document).ready(function () {
             $('#circle').waypoint(function () {
                 $('#circle').addClass('animate__animated animate__fadeIn')
             });
         }, offset)
+
+        $('.FYI').waypoint(function(){
+            $('.FYI').addClass('animate__animated animate__fadeInUp')
+        }, {offset:"40%"});
     </script>
 </body>
 

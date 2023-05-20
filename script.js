@@ -2,7 +2,7 @@ let circle = document.getElementById('circle')
 let head = document.getElementById('head')
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
-    circle.style.rotate = -value/8 + 'deg';
+    circle.style.rotate = value/8 + 'deg';
 });
 
 
@@ -53,6 +53,7 @@ let info = [
 
 
 let disinfo = document.getElementById('info');
+
 
 setInterval(()=>{
     let index = Math.floor(Math.random()*info.length)
