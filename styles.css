@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Press+Start+2P&display=swap');
+
+/* font-family: 'Foldit', cursive;
+font-family: 'Press Start 2P', cursive; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(images/universebg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+
+#head {
+    font-family: 'Foldit', cursive;
+    font-size: 7rem;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+#circle
+{
+    position: relative;
+    width: 560px;
+    left: 0;
+    opacity: 0;
+}
+
+#circle.animate__animated{
+    opacity: 1;
+    position: relative;
+    width: 620px;
+    margin-top: 60px;
+    left: 27vw;
+    opacity: 0;
+    transform: rotateZ(60deg);
+}
+
+
+.slide{
+    animation: slide 1  2s;
+    transition: all cubic-bezier(1, 0, 0, 1) ;
+}
+
+@keyframes slide{
+    0%{transform: translateY(0px);opacity: 0;scale: .3;}
+    100%{transform: translateY(0px);opacity: 1;scale: 1;}
+}
