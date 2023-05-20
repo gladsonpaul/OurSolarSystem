@@ -52,3 +52,32 @@ body {
     0%{transform: translateY(0px);opacity: 0;scale: .3;}
     100%{transform: translateY(0px);opacity: 1;scale: 1;}
 }
+
+.FYI
+{
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 200px;
+    background-color: transparent;
+}
+
+.FYI h1{
+    font-family: 'Panchang', sans-serif;    
+    color: #79E0EE;
+    font-size: 3em;
+}
+
+.FYI p{
+    color: white;
+    font-family: 'Sentient', serif;
+    font-size: 2.2em;
+    text-align: center;
+    transition: all ;
+}
+
