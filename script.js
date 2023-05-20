@@ -4,5 +4,5 @@ window.addEventListener('scroll',function(){
     let value = window.scrollY;
 
 
-    circle.style.rotate = value/2 + 'deg'
+    circle.style.rotate = value/-4 + 'deg'
 })
