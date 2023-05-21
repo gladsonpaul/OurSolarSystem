@@ -24,7 +24,7 @@ body {
     margin-top: 40vh;
     opacity: 0;
     position: relative;
-    width:1000px;
+    width: 1000px;
 }
 
 
@@ -34,8 +34,7 @@ body {
     opacity: 1;
 }
 
-#circle
-{
+#circle {
     position: relative;
     width: 560px;
     left: 0;
@@ -43,7 +42,7 @@ body {
     overflow-x: hidden;
 }
 
-#circle.animate__animated{
+#circle.animate__animated {
     opacity: 1;
     position: relative;
     width: 620px;
@@ -52,22 +51,30 @@ body {
     opacity: 0;
     transform: rotateZ(120deg);
     overflow-x: hidden;
-    
+
 }
 
 
-.slide{
-    animation: slide 1  2s;
-    transition: all cubic-bezier(1, 0, 0, 1) ;
+.slide {
+    animation: slide 1 2s;
+    transition: all cubic-bezier(1, 0, 0, 1);
 }
 
-@keyframes slide{
-    0%{transform: translateY(0px);opacity: 0;scale: .3;}
-    100%{transform: translateY(0px);opacity: 1;scale: 1;}
+@keyframes slide {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+        scale: .3;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        scale: 1;
+    }
 }
 
-.FYI
-{
+.FYI {
     margin: auto;
     margin-top: 70px;
     position: relative;
@@ -82,8 +89,7 @@ body {
     user-select: none;
 }
 
-.FYI.animate__animated
-{
+.FYI.animate__animated {
     margin: auto;
     margin-top: 70px;
     position: relative;
@@ -97,8 +103,8 @@ body {
     opacity: 1;
 }
 
-.FYI h1{
-    font-family: 'Panchang', sans-serif;    
+.FYI h1 {
+    font-family: 'Panchang', sans-serif;
     color: #16FF00;
     font-size: 3em;
     /* text-shadow: 0px 0px 3px #FC2947; */
@@ -107,14 +113,30 @@ body {
     /* animation: blink infinite 1s linear; */
 }
 
-@keyframes blink
-{
-    0%{text-shadow: 0px 0px 9px #8fe8f4;}
-    20%{text-shadow: 0px 0px 9px #8fe8f4;}
-    50%{text-shadow: none}
-    60%{text-shadow: 0px 0px 9px #8fe8f4;}
-    80%{text-shadow: none}
-    100%{text-shadow: 0px 0px 9px #8fe8f4;}
+@keyframes blink {
+    0% {
+        text-shadow: 0px 0px 9px #8fe8f4;
+    }
+
+    20% {
+        text-shadow: 0px 0px 9px #8fe8f4;
+    }
+
+    50% {
+        text-shadow: none
+    }
+
+    60% {
+        text-shadow: 0px 0px 9px #8fe8f4;
+    }
+
+    80% {
+        text-shadow: none
+    }
+
+    100% {
+        text-shadow: 0px 0px 9px #8fe8f4;
+    }
 }
 
 /* .FYI p{
@@ -127,39 +149,52 @@ body {
 }*/
 
 
-.FYI #element{
+.FYI #element {
     color: white;
     font-family: 'Sentient', serif;
     font-size: 2.2em;
     text-align: center;
-    transition: all ;
+    transition: all;
     /* padding-top: 100px; */
 }
 
-#one, #two, #three, #four, #five
-{
+#one,
+#two,
+#three,
+#four,
+#five {
     opacity: 0;
 }
 
-.samja h1
-{
+.samja h1 {
     font-family: 'Panchang', sans-serif;
     font-size: 10em;
     text-align: left;
     opacity: 0;
+    background-image: linear-gradient(to left bottom, #e74646, #eb5850, #ef685b, #f37867, #f68673, #f8957c, #faa387, #fbb193, #fbc3a2, #fbd4b5, #fce4ca, #fff3e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
-.samja{
+.samja {
     margin-right: 150px;
     position: relative;
     margin-top: 300px;
+    user-select: none;
+}
+
+.samja h1 {
+    line-height: .8;
+
 }
 
 
-#one.animate__animated, #two.animate__animated, #three.animate__animated, #four.animate__animated, #five.animate__animated
-{
+#one.animate__animated,
+#two.animate__animated,
+#three.animate__animated,
+#four.animate__animated,
+#five.animate__animated {
     opacity: 1;
-
 }
-
 
