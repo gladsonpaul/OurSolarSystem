@@ -2,7 +2,7 @@ let circle = document.getElementById('circle')
 let head = document.getElementById('head')
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
-    circle.style.rotate = value/8 + 'deg';
+    circle.style.rotate = -value/8 + 'deg';
 });
 
 
@@ -10,6 +10,7 @@ window.addEventListener('load', slide)
 
 function slide(){
     head.classList.add('slide');
+    head.style.opacity = "1"
 }
 
 
