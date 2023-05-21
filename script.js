@@ -53,10 +53,10 @@ let info = [
 ]
 
 
-let disinfo = document.getElementById('info');
+// let disinfo = document.getElementById('info');
 
 
-setInterval(()=>{
-    let index = Math.floor(Math.random()*info.length)
-    disinfo.innerHTML = info[index].toLowerCase()
-},6000)
+// setInterval(()=>{
+//     let index = Math.floor(Math.random()*info.length)
+//     disinfo.innerHTML = info[index].toLowerCase()
+// },6000)

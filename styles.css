@@ -80,7 +80,6 @@ body {
     /* background-color: grey; */
     opacity: 0;
     user-select: none;
-    cursor: pointer;
 }
 
 .FYI.animate__animated
@@ -137,15 +136,29 @@ body {
     /* padding-top: 100px; */
 }
 
-.samja
+#one, #two, #three, #four, #five
 {
     opacity: 0;
 }
 
-
-.samja.animate__animated
+.samja h1
 {
+    font-family: 'Panchang', sans-serif;
+    font-size: 10em;
+    text-align: left;
     opacity: 0;
+}
+
+.samja{
+    margin-right: 150px;
+    position: relative;
+    margin-top: 300px;
+}
+
+
+#one.animate__animated, #two.animate__animated, #three.animate__animated, #four.animate__animated, #five.animate__animated
+{
+    opacity: 1;
 
 }
 
