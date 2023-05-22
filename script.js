@@ -1,17 +1,33 @@
-let circle = document.getElementById('circle')
-let head = document.getElementById('head')
-window.addEventListener('scroll', function(){
+let circle = document.getElementById('circle');
+let head = document.getElementById('head');
+let instruction = document.getElementById('instruction');
+window.addEventListener('scroll', function () {
     let value = window.scrollY;
-    circle.style.rotate = -value/8 + 'deg';
+    circle.style.rotate = -value / 8 + 'deg';
+    astro.style.translate = (-value+'%');
+    instruction.style.translate = value/2 + '%';
 });
 
 
 window.addEventListener('load', slide)
 
-function slide(){
+function slide() {
     head.classList.add('slide');
     head.style.opacity = "1"
 }
+
+
+
+let astro = document.getElementById('astronaut');
+window.addEventListener('load', anime);
+function anime() {
+
+    astro.classList.add("astromove");
+    astro.classList.add('svav');
+    astro.style.opacity= "1";
+}
+
+
 
 
 let info = [
