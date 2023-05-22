@@ -219,8 +219,9 @@ body {
     width: 50%;
     padding: 20px;
     color: whitesmoke;
-    /* user-select: no; */
+    user-select: none;
     cursor: default;
+
 }
 
 .info h1 {
@@ -272,11 +273,51 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #13560d;
+    background-color: #c3c000;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #198a0f;
+    background-color: #faf600;
     border-radius: 5px;
+}
+
+#Sun,
+#Mercury,
+#Venus,
+#Earth,
+#Mars,
+#Jupiter,
+#Saturn,
+#Uranus,
+#Neptune {
+    opacity: 0;
+}
+
+#Sun.animate__animated,
+#Mercury.animate__animated,
+#Venus.animate__animated,
+#Earth.animate__animated,
+#Mars.animate__animated,
+#Jupiter.animate__animated,
+#Saturn.animate__animated,
+#Uranus.animate__animated,
+#Neptune.animate__animated {
+    opacity: 1;
+}
+
+.planets img {
+    animation: spin infinite 130s;
+    user-select: none;
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0deg;
+    }
+
+    /* 50%{transform: translateY(-60px); } */
+    100% {
+        rotate: 360deg;
+    }
 }

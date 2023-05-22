@@ -34,12 +34,12 @@
         <h1 id="two">LEARN</h1>
         <h1 id="three">ABOUT</h1>
         <h1 id="four">OUR</h1>
-        <h1 id="five">PLANETS</h1>
+        <h1 id="five">PLANETS!</h1>
     </div>
 
     //PLANTS BEGIN
 
-    <div class="container-fluid planets" id="sun">
+    <div class="container-fluid planets" id="Sun">
         <img src="images/Sun.png" alt="sun" class="w-50" style="float: left; margin-left: -40px;">
         <div class="info">
             <h1>SUN</h1>
@@ -108,7 +108,7 @@
         <img src="images/Uranus.png" alt="uranus" class="w-50" style="float: right; margin-right: -40px;">
         <div class="info2">
             <h1 style="color: 	#d1e7e7; text-shadow: 0px 0px 30px #d1e7e7;">7. URANUS</h1>
-            <p>Uranus is the seventh planet from the Sun, and has the third-largest diameter in our solar system. It was the first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.<br> <br>Uranus is about four times wider than Earth. If Earth were a large apple, Uranus would be the size of a basketball. <br>Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). </p>
+            <p>Uranus is the seventh planet from the Sun, and has the third-largest diameter in our solar system. It was the first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.<br><br>Uranus is about four times wider than Earth. If Earth were a large apple, Uranus would be the size of a basketball. <br>Uranus takes about 17 hours to rotate once (a Uranian day), and about 84 Earth years to complete an orbit of the Sun (a Uranian year). </p>
         </div>
     </div>
 
@@ -116,7 +116,7 @@
         <img src="images/Neptune.png" alt="neptune" class="w-50" style="float: left; margin-left: -40px;">
         <div class="info">
             <h1 style="color: #3680e7; text-shadow: 0px 0px 30px #3680e7;">8. NEPTUNE</h1>
-            <p>Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system.<br> More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.<br> <br> NASA's Voyager 2 is the only spacecraft to have visited Neptune up close. It flew past in 1989 on its way out of the solar system.</p>
+            <p>Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system.<br><br> More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.<br> <br> NASA's Voyager 2 is the only spacecraft to have visited Neptune up close. It flew past in 1989 on its way out of the solar system.</p>
         </div>
     </div>
 
@@ -192,6 +192,45 @@
         $('#five').waypoint(function () {
             $('#five').addClass('animate__animated animate__fadeInRight')
         }, { offset: "80%" });
+
+
+// PLANETS WAY POINTS
+
+        $('#Sun').waypoint(function(){
+            $('#Sun').addClass('animate__animated animate__fadeInLeft')
+        }, {offset:"10%"});
+
+        $('#Mercury').waypoint(function(){
+            $('#Mercury').addClass('animate__animated animate__fadeInRight')
+        }, {offset:"30%"});
+
+        $('#Venus').waypoint(function(){
+            $('#Venus').addClass('animate__animated animate__fadeInLeft')
+        }, {offset:"30%"});
+
+        $('#Earth').waypoint(function(){
+            $('#Earth').addClass('animate__animated animate__fadeInRight')
+        }, {offset:"30%"});
+
+        $('#Mars').waypoint(function(){
+            $('#Mars').addClass('animate__animated animate__fadeInLeft')
+        }, {offset:"30%"});
+
+        $('#Jupiter').waypoint(function(){
+            $('#Jupiter').addClass('animate__animated animate__fadeInRight')
+        }, {offset:"30%"});
+
+        $('#Saturn').waypoint(function(){
+            $('#Saturn').addClass('animate__animated animate__fadeInLeft')
+        }, {offset:"30%"});
+
+        $('#Uranus').waypoint(function(){
+            $('#Uranus').addClass('animate__animated animate__fadeInRight')
+        }, {offset:"30%"});
+
+        $('#Neptune').waypoint(function(){
+            $('#Neptune').addClass('animate__animated animate__fadeInLeft')
+        }, {offset:"30%"});
 
     </script>
 </body>
