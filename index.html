@@ -29,22 +29,42 @@
         <span id="element"></span>
     </div>
 
-   <div class="container-fluid samja" style="color: whitesmoke;">
-   <h1 id="one">LET'S</h1>
-   <h1 id="two">LEARN</h1>
-   <h1 id="three">ABOUT</h1>
-   <h1 id="four">OUR</h1>
-   <h1 id="five">PLANETS</h1>
-   </div>
+    <div class="container-fluid samja" style="color: whitesmoke;">
+        <h1 id="one">LET'S</h1>
+        <h1 id="two">LEARN</h1>
+        <h1 id="three">ABOUT</h1>
+        <h1 id="four">OUR</h1>
+        <h1 id="five">PLANETS</h1>
+    </div>
+
+    //PLANTS BEGIN
+
+    <div class="container-fluid planets" id="sun">
+        <img src="images/Sun.png" alt="sun" class="w-50" style="float: left; margin-left: -40px;">
+        <div class="info">
+            <h1>1. SUN</h1>
+            <p>The Sun holds the solar system together, keeping everything – from the biggest planets to the smallest
+                debris – in its orbit. <br> <br> The Sun is the largest object in our solar system. The Sun’s volume
+                would need 1.3 million Earths to fill it. Its gravity holds the solar system together, keeping
+                everything from the biggest planets to the smallest bits of debris in orbit around it.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid planets" id="Mercury">
+        <img src="images/Mercury.png" alt="sun" class="w-50" style="float: right; margin-right: -40px;">
+        <div class="info2">
+            <h1 style="color: brown; text-shadow: 0px 0px 30px brown;">2. MERCURY</h1>
+            <p>The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than
+                Earth's Moon.<br> <br>Despite its proximity to the Sun, Mercury is not the hottest planet in our solar
+                system – that title belongs to nearby Venus, thanks to its dense atmosphere.</p>
+        </div>
+    </div>
 
 
-   <div class="d-flex" style="height: 900px; color: white; margin-left: 30px;">
-    <div class="vr" style="width: 5px; opacity: 1; border-radius: 30px;"></div>
-  </div>
 
-   
 
-  
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
@@ -78,7 +98,7 @@
                 "Still here? ಠ_ಠ' ",
                 "99 percent of our solar system's mass is the sun",
                 "More energy from the sun hits Earth every hour than the planet uses in a year",
-                "If two pieces of the same type of metal touch in space, they will bond and be permanently stuck together", "Mercury is still shrinking", "There are mountains on Pluto", "More than 1,300 Earths would fit into Jupiter’s vast sphere", "Milky Way smells of rum, raspberries and booze", "You could survive for a couple of minutes in a leaky spacesuit", "1 tsp of neutron star weighs the same as the human population", "Gamma-ray bursts can release more energy in 10 seconds than our Sun will in its entire life", "There are stars we will never be able to see", "Black holes have theoretical opposites known as white holes","There I told you everything, now let me relax for a bit"],
+                "If two pieces of the same type of metal touch in space, they will bond and be permanently stuck together", "Mercury is still shrinking", "There are mountains on Pluto", "More than 1,300 Earths would fit into Jupiter’s vast sphere", "Milky Way smells of rum, raspberries and booze", "You could survive for a couple of minutes in a leaky spacesuit", "1 tsp of neutron star weighs the same as the human population", "Gamma-ray bursts can release more energy in 10 seconds than our Sun will in its entire life", "There are stars we will never be able to see", "Black holes have theoretical opposites known as white holes", "There I told you everything, now let me relax for a bit"],
             typeSpeed: 70,
         });
     </script>
@@ -102,7 +122,7 @@
         $('#two').waypoint(function () {
             $('#two').addClass('animate__animated animate__fadeInRight')
         }, { offset: "50%" });
-        
+
         $('#three').waypoint(function () {
             $('#three').addClass('animate__animated animate__fadeInRight')
         }, { offset: "60%" });
