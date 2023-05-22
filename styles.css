@@ -307,9 +307,32 @@ body {
 }
 
 .planets img {
-    animation: spin infinite 130s;
+    animation: spin infinite 110s;
+    user-select: none;
+    transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) .4s;
+}
+
+.planets img:hover {
+   scale: 118%;
+}
+
+
+#hoveroverme
+{
+    position: absolute;
+    width: 240px;
+    animation: none;
+    top: -20px;
+    left: 400px;
+    rotate: 30deg;
     user-select: none;
 }
+
+#hoveroverme:hover
+{
+  scale: none;
+}
+
 
 @keyframes spin {
     0% {
